@@ -55,50 +55,50 @@
 
 <p>It was too easy last time… so this time you have to name all 15 of 15 songs below. 2 points for the title of the song and 1 point of the artist or composer.</p>
 
-<h3 id="track-number-01">Track Number 01:</h3>
-<audio src="music/QT4/track-number-01.mp3" controls="" loop=""></audio>
+<h3 id="Track01">Track Number 01:</h3>
+<audio src="music/QT4/Track01.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-02">Track Number 02:</h3>
-<audio src="music/QT4/track-number-02.mp3" controls="" loop=""></audio>
+<h3 id="Track02">Track Number 02:</h3>
+<audio src="music/QT4/Track02.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-03">Track Number 03:</h3>
-<audio src="music/QT4/track-number-03.mp3" controls="" loop=""></audio>
+<h3 id="Track03">Track Number 03:</h3>
+<audio src="music/QT4/Track03.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-04">Track Number 04:</h3>
-<audio src="music/QT4/track-number-04.mp3" controls="" loop=""></audio>
+<h3 id="Track04">Track Number 04:</h3>
+<audio src="music/QT4/Track04.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-05">Track Number 05:</h3>
-<audio src="music/QT4/track-number-05.mp3" controls="" loop=""></audio>
+<h3 id="Track05">Track Number 05:</h3>
+<audio src="music/QT4/Track05.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-06">Track Number 06:</h3>
-<audio src="music/QT4/track-number-06.mp3" controls="" loop=""></audio>
+<h3 id="Track06">Track Number 06:</h3>
+<audio src="music/QT4/Track06.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-07">Track Number 07:</h3>
-<audio src="music/QT4/track-number-07.mp3" controls="" loop=""></audio>
+<h3 id="Track07">Track Number 07:</h3>
+<audio src="music/QT4/Track07.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-08">Track Number 08:</h3>
-<audio src="music/QT4/track-number-08.mp3" controls="" loop=""></audio>
+<h3 id="Track08">Track Number 08:</h3>
+<audio src="music/QT4/Track08.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-09">Track Number 09:</h3>
-<audio src="music/QT4/track-number-09.mp3" controls="" loop=""></audio>
+<h3 id="Track09">Track Number 09:</h3>
+<audio src="music/QT4/Track09.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-10">Track Number 10:</h3>
-<audio src="music/QT4/track-number-10.mp3" controls="" loop=""></audio>
+<h3 id="Track10">Track Number 10:</h3>
+<audio src="music/QT4/Track10.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-11">Track Number 11:</h3>
-<audio src="music/QT4/track-number-11.mp3" controls="" loop=""></audio>
+<h3 id="Track11">Track Number 11:</h3>
+<audio src="music/QT4/Track11.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-12">Track Number 12:</h3>
-<audio src="music/QT4/track-number-12.mp3" controls="" loop=""></audio>
+<h3 id="Track12">Track Number 12:</h3>
+<audio src="music/QT4/Track12.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-13">Track Number 13:</h3>
-<audio src="music/QT4/track-number-13.mp3" controls="" loop=""></audio>
+<h3 id="Track13">Track Number 13:</h3>
+<audio src="music/QT4/Track13.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-14">Track Number 14:</h3>
-<audio src="music/QT4/track-number-14.mp3" controls="" loop=""></audio>
+<h3 id="Track14">Track Number 14:</h3>
+<audio src="music/QT4/Track14.m4a" controls="" loop=""></audio>
 
-<h3 id="track-number-15">Track Number 15:</h3>
-<audio src="music/QT4/track-number-15.mp3" controls="" loop=""></audio>
+<h3 id="Track15">Track Number 15:</h3>
+<audio src="music/QT4/Track15.m4a" controls="" loop=""></audio>
 
   </div>
 </div>
@@ -170,10 +170,10 @@ function video_embed() {
 }
 video_embed();
 
-function mp3_embed() {
+function.m4a_embed() {
     var p = document.getElementsByTagName('p');
     for(var i = 0; i < p.length; i++) {
-        if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+        if(p[i].innerHTML.indexOf('.m4a') !== -1) {
             var str = p[i].innerHTML.split('?');
             if(str.length == 1) str[1] = '';
             var str1 = str[1];
@@ -182,7 +182,7 @@ function mp3_embed() {
             str1 = str1.replace('loop=1','').replace('loop=0','');
             str1 = str1.replace('controls=0','').replace('controls=1','');
 
-            if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+            if (str[0].lastIndexOf('.m4a', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
                 if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
                 if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
                 if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
@@ -286,10 +286,10 @@ function video_embed() {
 }
 video_embed();
 
-function mp3_embed() {
+function.m4a_embed() {
     var p = document.getElementsByTagName('p');
     for(var i = 0; i < p.length; i++) {
-        if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+        if(p[i].innerHTML.indexOf('.m4a') !== -1) {
             var str = p[i].innerHTML.split('?');
             if(str.length == 1) str[1] = '';
             var str1 = str[1];
@@ -298,7 +298,7 @@ function mp3_embed() {
             str1 = str1.replace('loop=1','').replace('loop=0','');
             str1 = str1.replace('controls=0','').replace('controls=1','');
 
-            if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+            if (str[0].lastIndexOf('.m4a', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
                 if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
                 if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
                 if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
